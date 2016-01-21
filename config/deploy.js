@@ -1,4 +1,5 @@
 /* jshint node: true */
+var keys = require('./keys');
 
 module.exports = function(deployTarget) {
   var ENV = {
@@ -9,15 +10,15 @@ module.exports = function(deployTarget) {
       type: 'git-commit'
     },
     's3-index': {
-      accessKeyId: process.env['S3_ACCESS_KEY'],
-      secretAccessKey: process.env['S3_SECRET_ACCESS_KEY'],
+      accessKeyId: keys.accessKeyId,
+      secretAccessKey: keys.secretAccessKey,
       bucket: "allovue-design",
       region: "us-east-1",
       allowOverwrite: true
     },
     's3': {
-      accessKeyId: process.env['S3_ACCESS_KEY'],
-      secretAccessKey: process.env['S3_SECRET_ACCESS_KEY'],
+      accessKeyId: keys.accessKeyId,
+      secretAccessKey: keys.secretAccessKey,
       bucket: "allovue-design",
       region: "us-east-1"
     }
