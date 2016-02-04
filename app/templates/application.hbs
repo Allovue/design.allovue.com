@@ -17,56 +17,41 @@
       </form>
     </div>
     <div class="col-xs-6 col-md-offset-1">
-      <div class='preview'><h4>Preview</h4>
+      <div class='preview'>
+        <h4>Preview</h4>
+        <small>Use your mouse to select and copy the signature and paste it in your email program of choice.</small>
+        <hr />
+        <table border="0" style="text-align:left;font-family:Lato,Calibri,sans-serif;color:rgb(74,74,74);font-size:14px;line-height:18px">
+          <tr>
+            <th style="vertical-align:top"></th>
+            <th class="text dash" style="vertical-align:top;padding-left:14px;color:rgb(170,170,170);text-align:left">&mdash;</th>
+          </tr>
+          <tr>
+            <td><a href="http://www.allovue.com" alt="Visit Allovue.com"><img src="https://s3.amazonaws.com/allovue-design/assets/allovue-logo.png"></a></td>
+            <td class="text" style="padding-left:14px">
+              <h4 style="margin:0;padding:0;font-weight:bold;font-size:15px;">{{#if name}}{{name}}{{else}}Your Name{{/if}}</h4>
+              <p style="margin:0;padding:0">{{#if position}}{{position}}{{else}}Position{{/if}}</p>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td class="text phone" style="padding-top:10px;color:rgb(170,170,170);padding-left:14px">
+              <p style="margin:0;padding:0"><a href="http://www.allovue.com" alt="Visit Allovue.com" style="color:rgb(170,170,170);text-decoration:none;">Allovue</a></p>
+              <p style="margin:0;padding:0"><a href="tel:{{phone}}" style="color:rgb(170,170,170);text-decoration:none;">{{#if phone}}{{phone}}{{else}}410-XXX-XXXX{{/if}}</a></p>
+            </td>
+          </tr>
+        </table>
+      </div>
       <hr />
-            <table border="0" cellpadding="0" cellspacing="0" width="350" style="border-collapse:collapse;border-spacing:0px;max-width:335px;color:rgb(87,87,87);font-family:Lato,Calibri,sans-serif;font-size:14px;line-height:22.3999996185303px;background-color:rgb(255,255,255)">
-              <tbody>
-                <tr style="border-style:hidden none none">
-                  <td height="30" width="30px" valign="top" style="padding:0px;vertical-align:middle;height:12px">
-                  </td>
-                  <td valign="top" style="padding:0px 0 10px;vertical-align:middle;font-family:Lato,Calibri,sans-serif;font-size:12px;color:rgb(170,170,170)">&mdash;</td>
-                </tr>
-                <tr style="border:none">
-                  <td rowspan="2" height="30" width="45px" valign="middle" style="padding:0px;vertical-align:middle;height:12px">
-                    <a style="padding:0;" href="http://allovue.com" title="Visit Allovue.com">
-                    <img src="https://s3.amazonaws.com/allovue-design/assets/allovue-logo.png" width=30 height=30 alt="Allovue Logo" /></a>
-                  </td>
-                  <td valign="top" style="padding:0px;vertical-align:middle;font-weight:bold;font-size:14px;line-height:normal;font-family:Lato,Calibri,sans-serif;color:rgb(74,74,74)">{{#if name}}{{name}}{{else}}Your Name{{/if}}</td>
-                </tr>
-                <tr style="border:none">
-                  <td valign="top" style="padding:0px;vertical-align:middle;font-size:14px;line-height:normal;font-family:Lato,Calibri,sans-serif;color:rgb(74,74,74)">{{#if position}}{{position}}{{else}}Position{{/if}}</td>
-                </tr>
-              </tbody>
-            </table>
-            <table border="0" cellpadding="0" cellspacing="0" width="350" style="border-collapse:collapse;border-spacing:0px;max-width:335px;color:rgb(87,87,87);font-family:Lato,Calibri,sans-serif;font-size:14px;line-height:22.3999996185303px;background-color:rgb(255,255,255)">
-              <tbody>
-                <tr style="border:none">
-                <td height="30" width="45px" rowspan="4" valign="top" style="padding:0px;vertical-align:middle;height:12px">
-                  </td>
-                  <td valign="top" style="padding:0px;vertical-align:middle;"></td>
-                </tr>
-                <tr style="border:none">
-                  <td height="10" valign="top" style="padding:0px;vertical-align:middle;height:12px"></td>
-                </tr>
-                <tr style="border:none">
-                  <td valign="top" style="padding:0px;vertical-align:middle;font-size:14px;line-height:normal;font-family:Lato,Calibri,sans-serif;color:rgb(170,170,170)">Allovue</td>
-                </tr>
-                <tr style="border:none">
-                  <td valign="top" style="padding:0px;vertical-align:middle;font-size:14px;line-height:normal;font-family:Lato,Calibri,sans-serif;color:rgb(170,170,170)">{{#if phone}}{{phone}}{{else}}410-XXX-XXXX{{/if}}</td>
-                </tr>
-              </tbody>
-            </table>
-              </div>
-            <hr />
 
       {{!-- Putting this here for future reference
             http://www.htmlescape.net/htmlescape_tool.html - Only had `Replace < > "` checked
             http://www.textfixer.com/tools/remove-line-breaks.php
        --}}
       <h4>Code Output</h4>
-      <small>Copy this HTML and use it in your email program of choice.</small>
+      <small>If copying the above preview itself doesn't work, try using the raw HTML:</small>
 
-      <textarea onfocus="this.select();">&lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;350&quot; style=&quot;border-collapse:collapse;border-spacing:0px;max-width:335px;color:rgb(87,87,87);font-family:Lato,Calibri,sans-serif;font-size:14px;line-height:22.3999996185303px;background-color:rgb(255,255,255)&quot;&gt; &lt;tbody&gt; &lt;tr style=&quot;border-style:hidden none none&quot;&gt; &lt;td height=&quot;30&quot; width=&quot;30px&quot; valign=&quot;top&quot; style=&quot;padding:0px;vertical-align:middle;height:12px&quot;&gt; &lt;/td&gt; &lt;td valign=&quot;top&quot; style=&quot;padding:0px 0 10px;vertical-align:middle;font-family:Lato,Calibri,sans-serif;font-size:12px;color:rgb(170,170,170)&quot;&gt;&mdash;&lt;/td&gt; &lt;/tr&gt; &lt;tr style=&quot;border:none&quot;&gt; &lt;td rowspan=&quot;2&quot; height=&quot;30&quot; width=&quot;45px&quot; valign=&quot;middle&quot; style=&quot;padding:0px;vertical-align:middle;height:12px&quot;&gt; &lt;a style=&quot;padding:0;&quot; href=&quot;http://allovue.com&quot; title=&quot;Visit Allovue.com&quot;&gt; &lt;img src=&quot;https://s3.amazonaws.com/allovue-design/assets/allovue-logo.png&quot; width=30 height=30 alt=&quot;Allovue Logo&quot; /&gt;&lt;/a&gt; &lt;/td&gt; &lt;td valign=&quot;top&quot; style=&quot;padding:0px;vertical-align:middle;font-weight:bold;font-size:14px;line-height:normal;font-family:Lato,Calibri,sans-serif;color:rgb(74,74,74)&quot;&gt;{{#if name}}{{name}}{{else}}Your Name{{/if}}&lt;/td&gt; &lt;/tr&gt; &lt;tr style=&quot;border:none&quot;&gt; &lt;td valign=&quot;top&quot; style=&quot;padding:0px;vertical-align:middle;font-size:14px;line-height:normal;font-family:Lato,Calibri,sans-serif;color:rgb(74,74,74)&quot;&gt;{{#if position}}{{position}}{{else}}Position{{/if}}&lt;/td&gt; &lt;/tr&gt; &lt;/tbody&gt; &lt;/table&gt; &lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;350&quot; style=&quot;border-collapse:collapse;border-spacing:0px;max-width:335px;color:rgb(87,87,87);font-family:Lato,Calibri,sans-serif;font-size:14px;line-height:22.3999996185303px;background-color:rgb(255,255,255)&quot;&gt; &lt;tbody&gt; &lt;tr style=&quot;border:none&quot;&gt; &lt;td height=&quot;30&quot; width=&quot;45px&quot; rowspan=&quot;4&quot; valign=&quot;top&quot; style=&quot;padding:0px;vertical-align:middle;height:12px&quot;&gt; &lt;/td&gt; &lt;td valign=&quot;top&quot; style=&quot;padding:0px;vertical-align:middle;&quot;&gt;&lt;/td&gt; &lt;/tr&gt; &lt;tr style=&quot;border:none&quot;&gt; &lt;td height=&quot;10&quot; valign=&quot;top&quot; style=&quot;padding:0px;vertical-align:middle;height:12px&quot;&gt;&lt;/td&gt; &lt;/tr&gt; &lt;tr style=&quot;border:none&quot;&gt; &lt;td valign=&quot;top&quot; style=&quot;padding:0px;vertical-align:middle;font-size:14px;line-height:normal;font-family:Lato,Calibri,sans-serif;color:rgb(170,170,170)&quot;&gt;Allovue&lt;/td&gt; &lt;/tr&gt; &lt;tr style=&quot;border:none&quot;&gt; &lt;td valign=&quot;top&quot; style=&quot;padding:0px;vertical-align:middle;font-size:14px;line-height:normal;font-family:Lato,Calibri,sans-serif;color:rgb(170,170,170)&quot;&gt;{{#if phone}}{{phone}}{{else}}410-XXX-XXXX{{/if}}&lt;/td&gt; &lt;/tr&gt; &lt;/tbody&gt; &lt;/table&gt;</textarea>
+      <textarea onfocus="this.select();">&lt;table border=&quot;0&quot; style=&quot;text-align:left;font-family:Lato,Calibri,sans-serif;color:rgb(74,74,74);font-size:14px;line-height:18px&quot;&gt; &lt;tr&gt; &lt;th style=&quot;vertical-align:top&quot;&gt;&lt;/th&gt; &lt;th class=&quot;text dash&quot; style=&quot;vertical-align:top;padding-left:14px;color:rgb(170,170,170);text-align:left&quot;&gt;&mdash;&lt;/th&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;&lt;a href=&quot;http://www.allovue.com&quot; alt=&quot;Visit Allovue.com&quot;&gt;&lt;img src=&quot;https://s3.amazonaws.com/allovue-design/assets/allovue-logo.png&quot;&gt;&lt;/a&gt;&lt;/td&gt; &lt;td class=&quot;text&quot; style=&quot;padding-left:14px&quot;&gt; &lt;h4 style=&quot;margin:0;padding:0;font-weight:bold;font-size:15px;&quot;&gt;{{#if name}}{{name}}{{else}}Your Name{{/if}}&lt;/h4&gt; &lt;p style=&quot;margin:0;padding:0&quot;&gt;{{#if position}}{{position}}{{else}}Position{{/if}}&lt;/p&gt; &lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;&lt;/td&gt; &lt;td class=&quot;text phone&quot; style=&quot;padding-top:10px;color:rgb(170,170,170);padding-left:14px&quot;&gt; &lt;p style=&quot;margin:0;padding:0&quot;&gt;&lt;a href=&quot;http://www.allovue.com&quot; alt=&quot;Visit Allovue.com&quot; style=&quot;color:rgb(170,170,170);text-decoration:none;&quot;&gt;Allovue&lt;/a&gt;&lt;/p&gt; &lt;p style=&quot;margin:0;padding:0&quot;&gt;&lt;a href=&quot;tel:{{phone}}&quot; style=&quot;color:rgb(170,170,170);text-decoration:none;&quot;&gt;{{#if phone}}{{phone}}{{else}}410-XXX-XXXX{{/if}}&lt;/a&gt;&lt;/p&gt; &lt;/td&gt; &lt;/tr&gt; &lt;/table&gt;</textarea>
     </div>
   </div>
 </div>
