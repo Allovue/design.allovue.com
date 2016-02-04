@@ -22,24 +22,29 @@
         <small>Use your mouse to select and copy the signature and paste it in your email program of choice.</small>
         <hr />
         <table border="0" style="text-align:left;font-family:Lato,Calibri,sans-serif;color:rgb(74,74,74);font-size:14px;line-height:18px">
-          <tr>
-            <th style="vertical-align:top"></th>
-            <th class="text dash" style="vertical-align:top;padding-left:14px;color:rgb(170,170,170);text-align:left">&mdash;</th>
-          </tr>
-          <tr>
-            <td><a href="http://www.allovue.com" alt="Visit Allovue.com"><img src="https://s3.amazonaws.com/allovue-design/assets/allovue-logo.png"></a></td>
-            <td class="text" style="padding-left:14px">
-              <h4 style="margin:0;padding:0;font-weight:bold;font-size:15px;">{{#if name}}{{name}}{{else}}Your Name{{/if}}</h4>
-              <p style="margin:0;padding:0">{{#if position}}{{position}}{{else}}Position{{/if}}</p>
-            </td>
-          </tr>
-          <tr>
-            <td></td>
-            <td class="text phone" style="padding-top:10px;color:rgb(170,170,170);padding-left:14px">
-              <p style="margin:0;padding:0"><a href="http://www.allovue.com" alt="Visit Allovue.com" style="color:rgb(170,170,170);text-decoration:none;">Allovue</a></p>
-              <p style="margin:0;padding:0"><a href="tel:{{phone}}" style="color:rgb(170,170,170);text-decoration:none;">{{#if phone}}{{phone}}{{else}}410-XXX-XXXX{{/if}}</a></p>
-            </td>
-          </tr>
+            <tr>
+                <td style="vertical-align:top"></td>
+                <td class="text dash" style="vertical-align:top;padding-left:14px;color:rgb(170,170,170);text-align:left">
+                    &mdash;
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="http://www.allovue.com" alt="Visit Allovue.com"><img src="https://s3.amazonaws.com/allovue-design/assets/allovue-logo.png"></a>
+                </td>
+                <td class="text" style="padding-left:14px">
+                    <h4 style="margin:0;padding:0;font-weight:bold;font-size:15px;">{{#if name}}{{name}}{{else}}Your Name{{/if}}</h4>
+                    <p style="margin:0;padding:0">{{#if position}}{{position}}{{else}}Position{{/if}}</p>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="text phone" style=
+                "padding-top:10px;color:rgb(170,170,170);padding-left:14px">
+                    <p style="margin:0;padding:0"><a href="http://www.allovue.com" alt="Visit Allovue.com" style="color:rgb(170,170,170);text-decoration:none;">Allovue</a></p>
+                    <p style="margin:0;padding:0"><a href="tel:{{phone}}" style="color:rgb(170,170,170);text-decoration:none;">{{#if phone}}{{phone}}{{else}}410-XXX-XXXX{{/if}}</a></p>
+                </td>
+            </tr>
         </table>
       </div>
       <hr />
@@ -51,7 +56,7 @@
       <h4>Code Output</h4>
       <small>If copying the above preview itself doesn't work, try using the raw HTML:</small>
 
-      <textarea onfocus="this.select();">&lt;table border=&quot;0&quot; style=&quot;text-align:left;font-family:Lato,Calibri,sans-serif;color:rgb(74,74,74);font-size:14px;line-height:18px&quot;&gt; &lt;tr&gt; &lt;th style=&quot;vertical-align:top&quot;&gt;&lt;/th&gt; &lt;th class=&quot;text dash&quot; style=&quot;vertical-align:top;padding-left:14px;color:rgb(170,170,170);text-align:left&quot;&gt;&mdash;&lt;/th&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;&lt;a href=&quot;http://www.allovue.com&quot; alt=&quot;Visit Allovue.com&quot;&gt;&lt;img src=&quot;https://s3.amazonaws.com/allovue-design/assets/allovue-logo.png&quot;&gt;&lt;/a&gt;&lt;/td&gt; &lt;td class=&quot;text&quot; style=&quot;padding-left:14px&quot;&gt; &lt;h4 style=&quot;margin:0;padding:0;font-weight:bold;font-size:15px;&quot;&gt;{{#if name}}{{name}}{{else}}Your Name{{/if}}&lt;/h4&gt; &lt;p style=&quot;margin:0;padding:0&quot;&gt;{{#if position}}{{position}}{{else}}Position{{/if}}&lt;/p&gt; &lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;&lt;/td&gt; &lt;td class=&quot;text phone&quot; style=&quot;padding-top:10px;color:rgb(170,170,170);padding-left:14px&quot;&gt; &lt;p style=&quot;margin:0;padding:0&quot;&gt;&lt;a href=&quot;http://www.allovue.com&quot; alt=&quot;Visit Allovue.com&quot; style=&quot;color:rgb(170,170,170);text-decoration:none;&quot;&gt;Allovue&lt;/a&gt;&lt;/p&gt; &lt;p style=&quot;margin:0;padding:0&quot;&gt;&lt;a href=&quot;tel:{{phone}}&quot; style=&quot;color:rgb(170,170,170);text-decoration:none;&quot;&gt;{{#if phone}}{{phone}}{{else}}410-XXX-XXXX{{/if}}&lt;/a&gt;&lt;/p&gt; &lt;/td&gt; &lt;/tr&gt; &lt;/table&gt;</textarea>
+      <textarea onfocus="this.select();">&lt;table border=&quot;0&quot; style=&quot;text-align:left;font-family:Lato,Calibri,sans-serif;color:rgb(74,74,74);font-size:14px;line-height:18px&quot;&gt; &lt;tr&gt; &lt;td style=&quot;vertical-align:top&quot;&gt;&lt;/td&gt; &lt;td class=&quot;text dash&quot; style=&quot;vertical-align:top;padding-left:14px;color:rgb(170,170,170);text-align:left&quot;&gt; &mdash; &lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt; &lt;a href=&quot;http://www.allovue.com&quot; alt=&quot;Visit Allovue.com&quot;&gt;&lt;img src=&quot;https://s3.amazonaws.com/allovue-design/assets/allovue-logo.png&quot;&gt;&lt;/a&gt; &lt;/td&gt; &lt;td class=&quot;text&quot; style=&quot;padding-left:14px&quot;&gt; &lt;h4 style=&quot;margin:0;padding:0;font-weight:bold;font-size:15px;&quot;&gt;{{#if name}}{{name}}{{else}}Your Name{{/if}}&lt;/h4&gt; &lt;p style=&quot;margin:0;padding:0&quot;&gt;{{#if position}}{{position}}{{else}}Position{{/if}}&lt;/p&gt; &lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;&lt;/td&gt; &lt;td class=&quot;text phone&quot; style= &quot;padding-top:10px;color:rgb(170,170,170);padding-left:14px&quot;&gt; &lt;p style=&quot;margin:0;padding:0&quot;&gt;&lt;a href=&quot;http://www.allovue.com&quot; alt=&quot;Visit Allovue.com&quot; style=&quot;color:rgb(170,170,170);text-decoration:none;&quot;&gt;Allovue&lt;/a&gt;&lt;/p&gt; &lt;p style=&quot;margin:0;padding:0&quot;&gt;&lt;a href=&quot;tel:{{phone}}&quot; style=&quot;color:rgb(170,170,170);text-decoration:none;&quot;&gt;{{#if phone}}{{phone}}{{else}}410-XXX-XXXX{{/if}}&lt;/a&gt;&lt;/p&gt; &lt;/td&gt; &lt;/tr&gt; &lt;/table&gt;</textarea>
     </div>
   </div>
 </div>
