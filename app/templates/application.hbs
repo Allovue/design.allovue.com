@@ -1,6 +1,8 @@
 <div class='email-signature-creator page'><div class="container-fluid">
   <div class="row">
     <div class="col-xs-4 col-md-offset-1">
+      <h4>1. Fill out your info.</h4>
+
       <form>
         <div class="form-group">
           <label for="personName">Name</label>
@@ -18,8 +20,7 @@
     </div>
     <div class="col-xs-6 col-md-offset-1">
       <div class='preview'>
-        <h4>Preview</h4>
-        <small>Use your mouse to select and copy the signature and paste it in your email program of choice.</small>
+        <h4>2. Drag-select the signature with your mouse, then copy it.</h4>
         <hr />
         <table border="0" style="text-align:left;font-family:Lato,Arial,sans-serif;color:rgb(74,74,74);font-size:14px;line-height:18px">
             <tr>
@@ -46,14 +47,24 @@
                 </td>
             </tr>
         </table>
+        <hr />
       </div>
+      <h4>3. Paste in to your email client's signature area.</h4>
+      <h5>For example in Gmail, select settings:</h5>
+        <img src='assets/gmail-settings-dropdown.png'/>
+      <h5>Scroll to the signature area and paste it in. Be careful not to paste it into the autoresponder section. Also Check the "Insert this signature..." box.</h5>
+        <img src='assets/gmail-signature-pasted.png'/>
+
+      <h5>Save your changes</h5>
+      <img src='assets/gmail-save-button.png'/>
+
       <hr />
 
       {{!-- Putting this here for future reference
             http://www.htmlescape.net/htmlescape_tool.html - Only had `Replace < > "` checked
             http://www.textfixer.com/tools/remove-line-breaks.php
        --}}
-      <h4>Code Output</h4>
+      <h5>If your email client needs raw HTML, copy that here:</h5>
       <small>If copying the above preview itself doesn't work, try using the raw HTML:</small>
 
       <textarea onfocus="this.select();">&lt;table border=&quot;0&quot; style=&quot;text-align:left;font-family:Lato,Arial,sans-serif;color:rgb(74,74,74);font-size:14px;line-height:18px&quot;&gt; &lt;tr&gt; &lt;td style=&quot;vertical-align:top&quot;&gt;&lt;/td&gt; &lt;td class=&quot;text dash&quot; style=&quot;vertical-align:top;padding-left:14px;color:rgb(170,170,170);text-align:left&quot;&gt; &mdash; &lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt; &lt;a href=&quot;http://www.allovue.com&quot; alt=&quot;Visit Allovue.com&quot;&gt;&lt;img src=&quot;https://s3.amazonaws.com/allovue-design/assets/allovue-logo.png&quot;&gt;&lt;/a&gt; &lt;/td&gt; &lt;td class=&quot;text&quot; style=&quot;padding-left:14px&quot;&gt; &lt;h4 style=&quot;margin:0;padding:0;font-weight:bold;font-size:15px;&quot;&gt;{{#if name}}{{name}}{{else}}Your Name{{/if}}&lt;/h4&gt; &lt;p style=&quot;margin:0;padding:0&quot;&gt;{{#if position}}{{position}}{{else}}Position{{/if}}&lt;/p&gt; &lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;&lt;/td&gt; &lt;td class=&quot;text phone&quot; style= &quot;padding-top:10px;color:rgb(170,170,170);padding-left:14px&quot;&gt; &lt;p style=&quot;margin:0;padding:0&quot;&gt;&lt;a href=&quot;http://www.allovue.com&quot; alt=&quot;Visit Allovue.com&quot; style=&quot;color:rgb(170,170,170);text-decoration:none;&quot;&gt;Allovue&lt;/a&gt;&lt;/p&gt; &lt;p style=&quot;margin:0;padding:0&quot;&gt;&lt;a href=&quot;tel:{{phone}}&quot; style=&quot;color:rgb(170,170,170);text-decoration:none;&quot;&gt;{{#if phone}}{{phone}}{{else}}410-XXX-XXXX{{/if}}&lt;/a&gt;&lt;/p&gt; &lt;/td&gt; &lt;/tr&gt; &lt;/table&gt;</textarea>
