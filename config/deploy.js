@@ -12,14 +12,14 @@ module.exports = function(deployTarget) {
     's3-index': {
       accessKeyId: keys.accessKeyId,
       secretAccessKey: keys.secretAccessKey,
-      bucket: "allovue-design",
+      bucket: "design.allovue.com",
       region: "us-east-1",
       allowOverwrite: true
     },
     's3': {
       accessKeyId: keys.accessKeyId,
       secretAccessKey: keys.secretAccessKey,
-      bucket: "allovue-design",
+      bucket: "design.allovue.com",
       region: "us-east-1"
     }
     // include other plugin configuration that applies to all deploy targets here
