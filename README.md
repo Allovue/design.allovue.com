@@ -41,7 +41,14 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 ### Deploying
 
-Specify what it takes to deploy your app.
+We use ember deploy to publish to an AWS bucket, design.allovue.com. 
+Route53 is setup to have the domain design.allovue.com point to this bucket as an A Alias record.
+
+To Deploy:
+1. Copy keys.example.js as keys.js
+2. Add your secret key and access ID to it. You should not check this file in to git. 
+3. In the console run `ember deploy production --verbose --activate=true`
+4. Visit design.allovue.com to see your handiwork!
 
 ## Further Reading / Useful Links
 
