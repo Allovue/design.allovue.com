@@ -46,7 +46,8 @@ module.exports = function(environment) {
   ENV.contentSecurityPolicy = {
     'img-src': "'self' data: s3.amazonaws.com *.s3.amazonaws.com *.dropboxusercontent.com *.dropbox.com https://notify.bugsnag.com *.intercomcdn.com heapanalytics.com *.google-analytics.com",
     'style-src': "'self' 'unsafe-inline' http://fonts.googleapis.com https://fonts.googleapis.com", // Allow inline styles and loaded CSS from http://fonts.googleapis.com
-    'media-src': "'self' s3.amazonaws.com *.s3.amazonaws.com  *.intercomcdn.com"
+    'media-src': "'self' s3.amazonaws.com *.s3.amazonaws.com  *.intercomcdn.com",
+    'script-src': 'allovue.atlassian.net'
   };
 
   return ENV;
