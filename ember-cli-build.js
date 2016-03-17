@@ -7,7 +7,17 @@ module.exports = function(defaults) {
     // Add options here
   });
   
+  app.import('bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.woff', {
+    destDir: 'fonts/bootstrap'
+  });
+  app.import('bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.woff2', {
+    destDir: 'fonts/bootstrap'
+  });
+  app.import('bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.ttf', {
+    destDir: 'fonts/bootstrap'
+  });
   app.import("bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss")
+
 
   // Use `app.import` to add additional libraries to the generated
   // output files.
